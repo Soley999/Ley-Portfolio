@@ -25,7 +25,7 @@
             width: 100%;
             top: 0;
             z-index: 2;
-            box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
+            box-shadow: 0 2px 10px rgba(0, 255, 204, 0.3);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -42,7 +42,7 @@
             position: relative;
         }
         nav ul li a {
-            color: #FFD700;
+            color: #00ffcc;
             text-decoration: none;
             font-weight: bold;
             padding: 10px 15px;
@@ -59,7 +59,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: rgba(255, 215, 0, 0.2);
+            background: rgba(0, 255, 204, 0.2);
             transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
             z-index: -1;
         }
@@ -69,12 +69,12 @@
         nav ul li a:hover {
             color: #ffffff;
             transform: translateY(-3px);
-            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+            box-shadow: 0 4px 8px rgba(0, 255, 204, 0.3);
         }
         nav ul li a.active {
-            background-color: rgba(255, 215, 0, 0.15);
+            background-color: rgba(0, 255, 204, 0.15);
             color: #ffffff;
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
             transform: translateY(-2px);
         }
         nav ul li a.active::after {
@@ -85,26 +85,26 @@
             transform: translateX(-50%);
             width: 6px;
             height: 6px;
-            background-color: #FFD700;
+            background-color: #00ffcc;
             border-radius: 50%;
-            box-shadow: 0 0 8px #FFD700;
+            box-shadow: 0 0 8px #00ffcc;
             animation: pulseIndicator 2s infinite;
         }
         @keyframes pulseIndicator {
-            0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
-            70% { box-shadow: 0 0 0 6px rgba(255, 215, 0, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+            0% { box-shadow: 0 0 0 0 rgba(0, 255, 204, 0.7); }
+            70% { box-shadow: 0 0 0 6px rgba(0, 255, 204, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 255, 204, 0); }
         }
         .hamburger {
             display: none;
             cursor: pointer;
             font-size: 24px;
-            color: #FFD700;
+            color: #00ffcc;
             transition: all 0.3s ease;
         }
         .hamburger:hover {
             transform: scale(1.1);
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
         }
         header {
             text-align: center;
@@ -122,11 +122,11 @@
         }
         header h1 {
             font-size: 3em;
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.8);
             opacity: 0;
             transform: translateY(-20px);
             animation: fadeInUp 0.8s forwards;
-            color: #FFD700;
+            color: #00ffcc;
         }
         @keyframes fadeInUp {
             to {
@@ -148,7 +148,7 @@
             padding: 20px;
             margin: 30px 0;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
             transition: opacity 0.5s ease, transform 0.5s ease;
             opacity: 0;
             transform: translateY(20px);
@@ -178,9 +178,9 @@
             100% { opacity: 1; transform: translateY(0); }
         }
         h2 {
-            color: #FFD700;
+            color: #00ffcc;
             font-family: 'Merriweather', serif;
-            border-bottom: 2px solid #FFD700;
+            border-bottom: 2px solid #00ffcc;
             padding-bottom: 10px;
             position: relative;
             display: inline-block;
@@ -194,7 +194,7 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.8), transparent);
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 204, 0.8), transparent);
             animation: glow 3s linear infinite;
         }
         @keyframes glow {
@@ -210,13 +210,13 @@
             width: 250px;
             height: 250px;
             transition: transform 0.5s ease, box-shadow 0.5s ease;
-            border: 3px solid #FFD700;
+            border: 3px solid #00ffcc;
             object-fit: cover;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
         }
         .profile img:hover {
             transform: scale(1.05) rotate(3deg);
-            box-shadow: 0 0 30px rgba(255, 215, 0, 0.7);
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.7);
         }
         .experience {
             display: flex;
@@ -228,21 +228,21 @@
             background: rgba(169, 169, 169, 0.2);
             padding: 15px;
             border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.3);
+            box-shadow: 0px 0px 10px rgba(0, 255, 204, 0.3);
             width: 100%;
             max-width: 600px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .card:hover {
             transform: scale(1.05);
-            box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.5);
+            box-shadow: 0px 0px 20px rgba(0, 255, 204, 0.5);
         }
         .contact a {
-            color: #FFD700;
+            color: #00ffcc;
             text-decoration: none;
             display: inline-block;
             padding: 10px 15px;
-            background-color: rgba(255, 215, 0, 0.2);
+            background-color: rgba(0, 255, 204, 0.2);
             border-radius: 5px;
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             position: relative;
@@ -255,7 +255,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: rgba(255, 215, 0, 0.4);
+            background: rgba(0, 255, 204, 0.4);
             transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
             z-index: -1;
         }
@@ -265,7 +265,7 @@
         .contact a:hover {
             color: #ffffff;
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+            box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
         }
         .contact img {
             width: 20px;
@@ -287,12 +287,12 @@
         }
         .skills ul li:hover {
             transform: translateX(10px);
-            color: #FFD700;
+            color: #00ffcc;
         }
         .skills ul li i {
             margin-right: 10px;
             transition: transform 0.3s ease;
-            color: #FFD700;
+            color: #00ffcc;
         }
         .skills ul li:hover i {
             transform: scale(1.2);
@@ -325,7 +325,7 @@
             padding: 15px 0;
             width: 100%;
             margin-top: auto;
-            box-shadow: 0 -2px 10px rgba(255, 215, 0, 0.3);
+            box-shadow: 0 -2px 10px rgba(0, 255, 204, 0.3);
             z-index: 1;
             position: relative;
             overflow: hidden;
@@ -337,7 +337,7 @@
             left: -100%;
             width: 100%;
             height: 2px;
-            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+            background: linear-gradient(90deg, transparent, #00ffcc, transparent);
             animation: footerGlow 4s linear infinite;
         }
         @keyframes footerGlow {
@@ -363,7 +363,7 @@
             pointer-events: none;
         }
         .loading-text {
-            color: #FFD700;
+            color: #00ffcc;
             font-size: 1.5rem;
             animation: pulse 1.5s infinite;
         }
